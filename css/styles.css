@@ -1,0 +1,37 @@
+.container {
+    padding: 50px;
+    width: 500px;
+    align-items: center;
+    font-family: times;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    border:2px solid #4a4cce;
+    color: black;
+}
+textarea{
+    font-size: 18px;
+    margin: 10px;
+    max-width: 90%;
+    min-width: 90%;
+    padding: 10px;
+    max-height: 45px;
+    min-height: 45px;
+    border:2px solid #c52243;
+}
+#date{
+    height: 45px;
+    width: 90%;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    border:2px solid #c52243;
+}
+button{
+    font-size: 16px;
+    border:2px solid #c52243;
+    margin: 10px;
+    width: 90%;
+    height: 45px;
+    color: black;
+}
