@@ -12,22 +12,19 @@ function tarea(){
     }else{  
         /**Elemntos agregados a la DOM*/  
         let pendientes = document.createElement('li');
+        let confirmation = document.createElement('input');
+        confirmation.setAttribute('type', 'checkbox');
         pendientes.innerHTML += homework.value;
         pendientes.innerHTML += ' - ' + dateHW.value ;
         newText.appendChild(pendientes);
-        homework.value = '';
-        dateHW.value = '';
+        pendientes.appendChild(confirmation);
+        const Datos = [];
+        Datos.push({taskaName: homework.value , dueDate: dateHW.value, Complete: false});
+        console.log(Datos);
     }
+    homework.value = '';
+    dateHW.value = '';
 
-    /**Objeto */
-    let Datos = {
-        task: homework.value,
-        dueTime: dateHW.value,
-        complete: false,
-    }
-    //Datos.push = homework.value;
-    //Datos.push = dateHW.value;
-    console.log(Datos);
 }
   
 /*Eventos*/
